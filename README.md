@@ -1,11 +1,11 @@
-# in-memory-cache
-================================
+# in-memory cache
+=================
 
 In-memory cache with the following methods:
 
-**_ Set(key string, value interface{}) _**
-**_ Get(key string) _**
-**_ Delete(key) _**
+*Set(key string, value interface{})*
+*Get(key string)*
+*Delete(key)*
 
 See it in action:
 ## Example
