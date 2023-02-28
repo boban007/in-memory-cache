@@ -1,1 +1,1 @@
-module github.com/boban007/in-memory-cache
+module github.com/vsakivskiy/in-memory-cache
