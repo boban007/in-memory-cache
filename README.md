@@ -4,7 +4,9 @@
 In-memory cache with the following methods:
 
 *Set(key string, value interface{})*
+
 *Get(key string)*
+
 *Delete(key)*
 
 See it in action:
