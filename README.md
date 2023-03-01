@@ -13,17 +13,31 @@ See it in action:
 ## Example
 
 ```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/vsakivskiy/cache"
+)
+
 func main() {
-	cache := cache.New()
+	c := cache.NewCache()
+	c.Set("uuid", "4dd76b1c-b7a7-11ed-afa1-0242ac120002")
+	c.Set("userId", 88)
 
-	cache.Set("userId", 42)
-	userId := cache.Get("userId")
+	uuid, _ := c.Get("uuid")
+	fmt.Println(uuid)
 
+	userId, _ := c.Get("userId")
 	fmt.Println(userId)
 
-	cache.Delete("userId")
-	userId := cache.Get("userId")
-
-	fmt.Println(userId)
+	c.Delete("userId")
+	userId, err := c.Get("userId")
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(userId)
+	}
 }
 ```
