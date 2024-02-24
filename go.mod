@@ -1,3 +1,3 @@
-module github.com/vsakivskiy/cache
+module github.com/o30n/cache
 
 go 1.20
